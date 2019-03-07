@@ -1,0 +1,29 @@
+/**
+ * File:    NAKI_foto.cga
+ * Created: 4 Dec 2015 13:14:58 GMT
+ * Author:  Pavel Tobias, CTU in Prague, Fac. of Civil Engineering, Department of Geomatics
+ */
+version "2014.1"
+
+//Attributes###################################################
+
+attr url_CE = "" //source SHP
+attr image_width = imageInfo(url_CE, sx)
+attr image_height = imageInfo(url_CE, sy)
+attr orientace = 0 //source SHP
+
+//Rules########################################################
+
+
+height = 25 //actual height
+width = image_width/image_height*height //actual width
+
+@StartRule  
+Photo -->
+	s(width,height,'1)
+	i("fotoramecek.dae")
+	setupProjection(0,scope.xy, scope.sx, scope.sy)
+    texture(url_CE)
+	projectUV(0)
+	rotate(rel, world, 0, -orientace, 0)
+	center(xz)

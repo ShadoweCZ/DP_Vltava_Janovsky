@@ -1,0 +1,52 @@
+/**
+ * File:    stromy_CO.cga
+ * Created: 3 Apr 2015 09:03:58 GMT
+ * Author:  Pavel Tobias, CTU in Prague, Fac. of Civil Engineering, Department of Geomatics
+ */
+version "2014.1"
+
+//Attributes###################################################
+
+attr tree_height = rand(14,20) //random height of trees
+attr tree_species = 16%: "obecny1"
+                    16%: "ovocny1"
+                    16%: "ovocny2"
+                    16%: "borovice"
+                    16%: "smrk1"
+                    16%: "smrk2"
+                    else: "smrk3"
+
+//Rules########################################################
+
+//Tree rule - differentiates the type of each tree
+@StartRule  
+Tree -->  
+	case tree_species == "obecny1": s(0,tree_height,0) //scale a tree asset proportinally to the given height ((x,y,z) - y is UP in City Engine)
+                            i("assets/trees/obecny1.dae")
+                            rotate(rel, world, 0, rand(0,360), 0) //rotates a tree asset randomly about y (vertical) axis
+	                        center(xz) //centers a tree asset (it is necessary, because the rotate function doesn't rotate about the origin) 
+	case tree_species == "ovocny1": s(0,tree_height,0) //scale a tree asset proportinally to the given height ((x,y,z) - y is UP in City Engine)
+                            i("assets/trees/ovocny1.dae")
+                            rotate(rel, world, 0, rand(0,360), 0) //rotates a tree asset randomly about y (vertical) axis
+	                        center(xz) //centers a tree asset (it is necessary, because the rotate function doesn't rotate about the origin)    
+	case tree_species == "ovocny2": s(0,tree_height,0) //scale a tree asset proportinally to the given height ((x,y,z) - y is UP in City Engine)
+                            i("assets/trees/ovocny2.dae")
+                            rotate(rel, world, 0, rand(0,360), 0) //rotates a tree asset randomly about y (vertical) axis
+	                        center(xz) //centers a tree asset (it is necessary, because the rotate function doesn't rotate about the origin)  
+	case tree_species == "borovice": s(0,tree_height,0) //scale a tree asset proportinally to the given height ((x,y,z) - y is UP in City Engine)
+                            i("assets/trees/borovice.dae")
+                            rotate(rel, world, 0, rand(0,360), 0) //rotates a tree asset randomly about y (vertical) axis
+	                        center(xz) //centers a tree asset (it is necessary, because the rotate function doesn't rotate about the origin)
+	case tree_species == "smrk1": s(0,tree_height,0) //scale a tree asset proportinally to the given height ((x,y,z) - y is UP in City Engine)
+                            i("assets/trees/smrk1.dae")
+                            rotate(rel, world, 0, rand(0,360), 0) //rotates a tree asset randomly about y (vertical) axis
+	                        center(xz) //centers a tree asset (it is necessary, because the rotate function doesn't rotate about the origin) 
+	case tree_species == "smrk2": s(0,tree_height,0) //scale a tree asset proportinally to the given height ((x,y,z) - y is UP in City Engine)
+                            i("assets/trees/smrk2.dae")
+                            rotate(rel, world, 0, rand(0,360), 0) //rotates a tree asset randomly about y (vertical) axis
+	                        center(xz) //centers a tree asset (it is necessary, because the rotate function doesn't rotate about the origin)
+	case tree_species == "smrk3": s(0,tree_height,0) //scale a tree asset proportinally to the given height ((x,y,z) - y is UP in City Engine)
+                            i("assets/trees/smrk3.dae")
+                            rotate(rel, world, 0, rand(0,360), 0) //rotates a tree asset randomly about y (vertical) axis
+	                        center(xz) //centers a tree asset (it is necessary, because the rotate function doesn't rotate about the origin)                                                                                                                                        
+    else: NIL

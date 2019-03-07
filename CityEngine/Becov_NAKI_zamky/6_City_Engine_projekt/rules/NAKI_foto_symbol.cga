@@ -1,0 +1,19 @@
+/**
+ * File:    NAKI_foto_symbol.cga
+ * Created: 4 Dec 2015 13:14:58 GMT
+ * Author:  Pavel Tobias, CTU in Prague, Fac. of Civil Engineering, Department of Geomatics
+ */
+version "2014.1"
+
+//Attributes###################################################
+
+attr orientace = 0 //source SHP
+
+//Rules########################################################
+
+@StartRule  
+PhotoSymbol -->
+	i("foto_symbol.dae")
+	s('80,'80,'80)
+	rotate(rel, world, 0, -orientace, 0)
+	center(xz)

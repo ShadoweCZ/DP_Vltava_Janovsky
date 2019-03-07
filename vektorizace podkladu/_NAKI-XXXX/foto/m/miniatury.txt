@@ -1,0 +1,5 @@
+Vytvoøte miniatury fotografií o velikosti 245px šíøky
+a pojmenujte je stejnì jako originály + "_m" .pøípona
+napø:
+originál: BM_kaple_sv_Barbory-1409a.JPG
+miniatura: BM_kaple_sv_Barbory-1409a_m.JPG
