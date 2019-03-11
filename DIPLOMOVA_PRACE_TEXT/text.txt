@@ -1,0 +1,51 @@
+Kamyk : 
+Obec Kamýk nad Vltavou se nachází na pomezí Sedlčanska a Příbramska v okrese Příbram v středočeském kraji,
+konkrétně asi 20 km východně od Příbrami a 12 km západně od Sedlčan. 
+Rozléhá se na obou březích řeky Vltavy, které jsou spojeny cca 110 m dlouhým mostem postaveným v letech 1887–1889.
+
+Největšími památkami obce jsou: 
+zřícenina Hradu Vrškamýk, kde podle kamenů které se nalézají na kopci měla být pojmenována i samotná obec,
+kostel Narození Panny Marie který tvoří přirozenou dominantu obce na levém břehu řeky Vltavy,
+Vodní nádrž Kamýk která je součástí komplexu vltavské kaskády a dalších.
+
+K vodní nádrži patří i její přehrada, která byla postavena jako součást Vltavské kaskády v letech 1957–1962, 
+pro vyrovnání kolísavého odtoku z elektrárny Orlík. Jejími dalšími účely  jsou ochrana před povodněmi, 
+vyrovnání průtoků, energetika, nalepšení průtoků a rekreace. Hráz je vysoká 17 m, dlouhá 158 m a má maximální hloubkou 14m. 
+
+
+5.3.2 Tvorba Mozaiky ---- VYTVORIT NOVOU KAPITOLU
+Po provedení Georeferencování dostáváme zgeoreferencováné jednotlivé části (listy) jednotlivých KÚ. Problém je v tom, že jednotlivé 
+nageoreferencované listy mají velkou nevyužitou plochu a při zobrazení všech listů se mapy překrývají. To se dá vyřešit několika 
+způsoby. Jedním způsobem by bylo manuálně ořezat všechny mapové listy, nicméně zde stále bude problém v nutnosti pracovat s mnoha 
+rastry najednou.
+Z tohoto důvodu bylo zvoleno řešení, kdy se pro jednotlivé listy vytvoří "footprint" a vloží se do jedné mozaiky. Výsledkem je mozaika,
+kde jsou jednotlivé mapové listy zdánlivě oříznuty a zároveň fungují jako jedna vrstva. S takovouto mozaikou se dá dále pracovat a například ji 
+poskytovat pomocí služby WMTS a jiné (viz celková mozaika CO projektu Vltava)
+
+
+5.3.3 Vektorizace podkladů
+Po dokončení georeferencování (pokud bylo pro danné mapové podklady třeba) byla provedena vektorizace dat.
+Vektorizací se rozumí převod rastrových dat (map) do vektorové podoby. Při vektorizaci byly plochy stejného typu slučovány, pouze v blízkosti 
+obydlí bylo rozdělení pozemků zachováno. Vektorizace byla prováděna ručně v programu ArcMap, kde jednotlivé budovy a typy půdu a vodstva byly 
+roztříděny do jednotlivých kategorií dle legendy mapy a potřeb práce.
+
+5.2.1.1 Císařské povinné otisky stabilního katastru
+Stabilní katastr jako takový se pro naše území skládal z tří souřadnicových systémů a to Svatoštěpánský, Gusterbergský a JMENO, kde Gusterbergský souřadnicový 
+systém byl určen pro Čechy, Svatoštěpánský pro Moravu a JMENO pro Slovensko. 
+
+VLOZIT OBRAZEK KLAD
+
+DATA ZAMERENI A DATA ZPRACOVANI, PRESNOST A METODY
+
+VLOZIT OBRAZEK LEGENDA
+
+Císařské povinné otisky stabilního katastru, použité v této práci, jsou v souřadnicovém systému Gusterberg a jedná se o barevné skeny ve formátu JPEG.
+CO muselý být tedy nejprve georeferencovány. U georeferencování konkrétního KÚ Kamýk nad Vltavou docházelo k problému, kdy některé listy něměli žádné 
+značky kladu a jejich georeferencování bylo tím složitější, jelikož nalézt IB na takto starých (a ne vždy přesně zaměřených a zakreslených) mapách je značně obtížné.
+
+KÚ Kamýk nad Vltavou je konkrétně rozděleno na XYZ mapových listů. Níže je přiložena tabulka, která k jednotlivým mapovým listům přiřazuje počet použitách
+IB, použitou transformaci a dosažené přesnosti. 
+
+VLOZIT TABULKA IB _ CO
+
+
