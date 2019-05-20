@@ -1,0 +1,37 @@
+/**
+ * File:    stromy_CO.cga
+ * Created: 3 Apr 2015 09:03:58 GMT
+ * Author:  Pavel Tobias, CTU in Prague, Fac. of Civil Engineering, Department of Geomatics
+ */
+version "2014.1"
+
+//Attributes###################################################
+
+attr druh = "" //distinguishes the type of trees - ovocny, obecny, ker, source: SHP
+attr fruit_tree_height = rand(8,10) //random height of fruit trees
+attr general_tree_height = rand(10,20) //random height of other trees
+
+//Assets#######################################################
+
+fruit_tree = fileRandom("trees/ovocny*.dae") //picks random fruit tree asset
+
+//Rules########################################################
+
+//Tree rule - differentiates the type of each tree
+@StartRule  
+Tree -->  
+	case druh == "ovocny": Fruit_Tree
+	case druh == "obecny": General_Tree
+	else: NIL
+
+Fruit_Tree -->
+    s(0,fruit_tree_height,0) //scale a tree asset proportinally to the given height ((x,y,z) - y is UP in City Engine)
+    i(fruit_tree) //inserts a tree asset
+    rotate(rel, world, 0, rand(0,360), 0) //rotates a tree asset randomly about y (vertical) axis
+	center(xz) //centers a tree asset (it is necessary, because the rotate function doesn't rotate about the origin)
+
+General_Tree -->
+    s(0,general_tree_height,0) //scale a tree asset proportinally to the given height ((x,y,z) - y is UP in City Engine)
+    i("trees/obecny1.dae") //inserts a tree asset
+    rotate(rel, world, 0, rand(0,360), 0) //rotates a tree asset randomly about y (vertical) axis
+	center(xz) //centers a tree asset (it is necessary, because the rotate function doesn't rotate about the origin)

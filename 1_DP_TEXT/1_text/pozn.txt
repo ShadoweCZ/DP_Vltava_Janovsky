@@ -45,7 +45,16 @@ zaver vecny
 co se podarilo
 
 
+--------------- 
+CityEngine
+z vrstevnic TIN
+do slozky maps vlozit tiff z vrstevnic
 
+ags.cuzk.cz - server - 3D - DMR 5 a 4 generace
+
+vektorizace vyexportovat do shp
+
+zalozit scenu
 
 
 
