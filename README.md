@@ -1,1 +1,4 @@
-# DP_Vltava_Janovsky
+# Diplomová práce 
+VIZUALIZACE ŘÍČNÍHO ÚDOLÍ VLTAVY V OKOLÍ VODNÍ NÁDRŽE KAMÝK S VYUŽITÍM PROCEDURÁLNÍHO MODELOVÁNÍ
+Bc. Michal Janovský
+2019
