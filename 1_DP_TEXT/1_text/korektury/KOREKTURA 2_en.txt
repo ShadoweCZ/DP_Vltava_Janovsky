@@ -1,0 +1,13 @@
+Cílem této práce je vizualizace vltavského údolí v oblasti Kamýk nad Vltavou.
+Podstatou zpracování je georeferencování a vektorizace mapových podkladù
+v programu ArcMap. Na základì tohoto zpracování jsou procedurálnì vymodelovány
+3D objekty v programu CityEngine. Vzniklé 3D objekty jsou doplnìny 
+o fotogrammetricky vyhodnocený model nádrže Kamýk. Výsledky jsou prezentovány
+formou mapových aplikací.
+
+
+
+The aim of the thesis is to visualize the Vltava valley in the area of ??Kamýk nad Vltavou.
+The essence of the processing is to georeference and vectorizate map data
+in ArcMap. Based on this processing, there are procedurally modeled
+3D objects in CityEngine. 3D objects are added by a photogrammetrically created model of the Kamýk dam. The results are presented in the form of map applications.
